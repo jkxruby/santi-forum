@@ -1,0 +1,27 @@
+<div class="col-md-10 col-md-offset-1">
+  <div class="group">
+    <%= link_to "New Group", new_group_path,class: "btn btn-primary btn-sm pull-right"%>
+  </div>
+
+
+
+  <table class="table table-bold">
+    <thead>
+      <tr>
+        <th> Title </th>
+        <th> Description </th>
+        <th> User </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @groups.each do |group| %>
+      <tr>
+        <td><%= group.title %></td>
+        <td><%= group.description %></td>
+        <td><%= group.user.email %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+</div>
