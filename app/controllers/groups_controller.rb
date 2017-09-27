@@ -10,7 +10,7 @@ end
 
 def create
   @group = Group.new(group_params)
-  @group.user = current_user 
+  @group.user = current_user
   if @group.save
     redirect_to groups_path
   else
@@ -19,7 +19,7 @@ def create
 end
 
 def edit
-  @group = Group.find(params[:id])
+  @group = Group.find(params["id"])
 end
 
 def update
@@ -33,6 +33,12 @@ end
 
 def show
   @group = Group.find(params[:id])
+end
+
+def destroy
+  @group = Group.find(params[:id])
+  @group.destroy
+  redirect_to groups_path(@group), alert: "deleted,say bye"
 end
 
 private

@@ -5,12 +5,13 @@
 
 
 
-  <table class="table table-bold">
+  <table class="table table-hover ">
     <thead>
       <tr>
         <th> Title </th>
         <th> Description </th>
         <th> User </th>
+        <th> Fuction </th>
       </tr>
     </thead>
     <tbody>
@@ -19,6 +20,10 @@
         <td><%= group.title %></td>
         <td><%= group.description %></td>
         <td><%= group.user.email %></td>
+        <td>
+          <%= link_to "Edit", edit_group_path(group), class: "btn btn-info btn-sm"%> |
+          <%= link_to "Delete", group_path(group), method: :delete, class: "btn btn-warning btn-sm", data: {confirm:"are you sure?"}%>
+        </td>
       </tr>
       <% end %>
     </tbody>
