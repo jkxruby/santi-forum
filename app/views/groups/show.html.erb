@@ -1,0 +1,31 @@
+<div class="col-md-10 col-md-offset-1">
+
+  <%= link_to "点击评论", new_group_post_path(@group), class: "btn btn-primary pull-right" %>
+  <h1>评论列表</h1>
+  <hr>
+  <tr>
+    <h4><td>❤️<%= @group.title %></td>
+    ❤️
+    <td><%= @group.description %></td></h4>
+  </tr>
+
+  <table class="table table-hover ">
+   <thead>
+     <tr>
+        <th> 评论内容 </th>
+        <th> 评论人 </th>
+        <th> 创建时间 </th>
+     </tr>
+   </thead>
+   <tbody>
+      <% @posts.each do |post|%>
+      <tr>
+         <td><%= post.content %></td>
+         <td><%= post.user.email %></td>
+         <td><%= post.created_at %></td>
+      </tr>
+   <% end %>
+  </tbody>
+  </table>
+
+</div>
