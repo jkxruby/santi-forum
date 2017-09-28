@@ -1,14 +1,14 @@
 <div class="col-md-10 col-md-offset-1">
-
-  <%= link_to "点击评论", new_group_post_path(@group), class: "btn btn-primary pull-right" %>
   <span class="pull-right">
     <% if current_user && current_user.is_member_of?(@group) %>
-    <label class="label label-success">组员</label>
+    <label class="label label-success pull-right">组员</label>
+    <%= link_to("退出群组", quit_group_path(@group), method: :post, class: "btn btn-info")%>
     <% else %>
-    <label class="label label-danger">游客</label>
+    <label class="label label-danger pull-right">游客</label>
+    <%= link_to("加入群组", join_group_path(@group), method: :post, class: "btn btn-info")%>
     <% end %>
   </span>
-  
+  <%= link_to "点击评论", new_group_post_path(@group), class: "btn btn-primary pull-right" %>
   <h1>评论列表</h1>
   <hr>
   <tr>

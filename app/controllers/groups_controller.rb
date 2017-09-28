@@ -42,12 +42,31 @@ def destroy
   redirect_to groups_path(@group), alert: "deleted,say bye"
 end
 
+def join
+  @group = Group.find(params[:id])
+  if !current_user.is_member_of?(@group)
+
+    current_user.join!(@group)
+    flash[:alert] = "已经加入本版！"
+  else
+    flash[:warning] = "无解"
+ end
+  redirect_to group_path(@group)
+end
+
+def quit
+  @group = Group.find(params[:id])
+  if current_user.is_member_of?(@group)
+     current_user.quit!(@group)
+  redirect_to :back
+  end
+end
+
 private
 
 def group_params
   params.require(:group).permit(:title, :description)
 end
-
 
 
 end
