@@ -1,8 +1,8 @@
-<h1>简单论坛网站-参考下图</h1>
-![展示图片](https://github.com/jkxruby/Users/jkxuan/Desktop/1.png);
+<h1>三体论坛-参考下图</h1>
+![展示图片](https://github.com/jkxruby/santi-forum/blob/e873d4f8b1edad281c3b54ddcb35f90233669601/1.png);
 
-![展示图片](https://github.com/jkxruby/Users/jkxuan/Desktop/2.png);
+![展示图片](https://github.com/jkxruby/santi-forum/blob/e873d4f8b1edad281c3b54ddcb35f90233669601/2.png);
 
-![展示图片](https://github.com/jkxruby/Users/jkxuan/Desktop/3.png);
+![展示图片](https://github.com/jkxruby/santi-forum/blob/e873d4f8b1edad281c3b54ddcb35f90233669601/3.png);
 
-![展示图片](https://github.com/jkxruby/Users/jkxuan/Desktop/4.png);
+![展示图片](https://github.com/jkxruby/santi-forum/blob/e873d4f8b1edad281c3b54ddcb35f90233669601/4.png);
