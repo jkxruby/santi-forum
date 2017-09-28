@@ -7,7 +7,12 @@ Rails.application.routes.draw do
     member do
       post :join
       post :quit
-    end 
+    end
+    resources :posts
+  end
+
+  namespace :admin do
+    resources :groups
     resources :posts
   end
 
