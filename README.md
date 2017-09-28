@@ -1,24 +1,8 @@
-# README
+<h1>简单论坛网站-参考下图</h1>
+![Alt text](https://github.com/jkxruby/Users/jkxuan/Desktop/1.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![Alt text](https://github.com/jkxruby/Users/jkxuan/Desktop/2.png)
 
-Things you may want to cover:
+![Alt text](https://github.com/jkxruby/Users/jkxuan/Desktop/3.png)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Alt text](https://github.com/jkxruby/Users/jkxuan/Desktop/4.png)
